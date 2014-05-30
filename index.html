@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Legacy Character Sheet Constructor</title>
+        <link rel="stylesheet" href="style.css">
+		<script src="jquery-2.1.0.min.js"></script>
+        <script type='text/javascript' src='script.js'></script>
+</head>
+<body>
+<div id='main' class='main'>
+<ul class="raceTab"><!--The main tabs to switch between content types-->
+        <li id="humanTab"><div>Human</div></li>
+        <li id="elfTab"><div>Elf</div></li>
+        <li id="dwarfTab"><div>Dwarf</div></li>
+		<li id="dahnTab"><div>Dahn</div></li>
+        <li id="wyrdTab"><div>Wyrd</div></li>
+    </ul>
+	  <div class="raceContentTab" id="startTab"><div class="seg raceSelected" id="startTab" style="display:block;"><!--Given the class 'selected' and style 'block' to begin with so visitors have some content greet them-->        
+		<div class="content" style="display:block;">Select Your Race.</div>
+		</div>
+	  </div>
+	  <div class="raceContentTab" id="humanTab"><div class="seg" id="humanTab" style="display:none;">      
+		<div class="content" style="display:block;">
+			<ul class="humanTypeTab"><!--The tabs to switch between human subtypes-->
+				<li id="midlanderTab"><div>Midlander</div></li>
+				<li id="northlanderTab"><div>Northlander</div></li>
+				<li id="wastelanderTab"><div>Wastelander</div></li>
+			</ul>
+			</div>
+	   </div>
+	  </div>
+	  <div class="raceContentTab" id="elfTab"><div class="seg" id="elfTab" style="display:none;">       
+		<div class="content" style="display:block;">
+			<ul class="elfTypeTab"><!--The main tabs to switch between elf subtypes-->
+				<li id="darkElfTab"><div>Dark Elf</div></li>
+				<li id="greyElfTab"><div>Grey Elf</div></li>
+				<li id="wildElfTab"><div>Wild Elf</div></li>
+			</ul>
+	   </div>
+	  </div>
+	  <div class="raceContentTab" id="dwarfTab"><div class="seg" id="dwarfTab" style="display:none;">     
+		<div class="content" style="display:block;">
+			<ul class="dwarfTypeTab"><!--The main tabs to switch between dwarf subtypes-->
+				<li id="deepBeardTab"><div>Deep Beard</div></li>
+				<li id="highBeardTab"><div>High Beard</div></li>
+			</ul>
+			</div>
+	   </div>
+	  </div>
+	  <div class="raceContentTab" id="dahnTab"><div class="seg" id="dahnTab" style="display:none;">        
+		<div class="content" style="display:block;">
+			<ul class="dahnTypeTab"><!--The main tabs to switch between dahn subtypes-->
+				<li id="goblinTab"><div>Goblin</div></li>
+				<li id="orcTab"><div>Orc</div></li>
+			</ul>		 
+			</div>
+	   </div>
+	  </div>
+	  <div class="raceContentTab" id="wyrdTab"><div class="seg" id="wyrdTab" style="display:none;">       
+		<div class="content" style="display:block;">
+			<ul class="wyrdTypeTab"><!--The tabs to switch between wyrd subtypes-->
+				<li id="airWyrdTab"><div>Air Wyrd</div></li>
+				<li id="earthWyrdTab"><div>Earth Wyrd</div></li>
+				<li id="fireWyrdTab"><div>Fire Wyrd</div></li>
+				<li id="waterWyrdTab"><div>Water Wyrd</div></li>
+			</ul>
+			</div>
+	   </div>
+	  </div>
+</div>
+		<div id=characterSheet><p>Hi</p></div>
+</body>
+</html>
