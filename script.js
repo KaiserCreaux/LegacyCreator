@@ -20,8 +20,8 @@ $(document).ready(function() {
     
     $raceContentTab.click(function() {
         if($(this)){
-            $raceContentTab.removeClass("selectedTeam");
-        $(this).addClass("selectedTeam");}
+            $raceContentTab.removeClass("selectedRace");
+        $(this).addClass("selectedRace");}
         
         selectionIdTeam = $(this).attr('id');
         
