@@ -7,8 +7,21 @@ body  {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #522900;
+    color: navy;
     font-family: garamond;
+}
+#sidebar{
+	height: 320px;
+	width: 120px;
+	border: .2 em solid black;
+	border-radius: 5px;
+	background-color: #303014;
+	position: fixed;
+	top:30px;
+    right:5px;
+}
+#options{
+	float:top
 }
 #characterSheet {
 	height: 300px;
@@ -16,7 +29,24 @@ body  {
 	border: .2 em solid black;
 	border-radius: 5px;
 	background-color: #308014;
-	float: right
+	position: absolute
+}
+#raceDisplayHumanM{
+	height: 70%;
+	width: 45%;
+	background-color: white;
+    padding: 0.5% 1% 0.5% 1%;
+    border: 1px solid #522900;
+    display: inline-block;
+    border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+	
+}
+#raceDisplayHumanM img {
+	max-height: 50%;
+	max-width: 70%;
 }
 .team
 {
