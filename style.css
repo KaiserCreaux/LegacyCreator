@@ -17,10 +17,12 @@ body  {
 	border-radius: 5px;
 	background-color: #303014;
 	position: fixed;
+	float: right;
 	top:30px;
-    right:5px;
+    right:50px;
 }
 #options{
+	position: fixed;
 	float:top
 }
 #characterSheet {
@@ -29,11 +31,12 @@ body  {
 	border: .2 em solid black;
 	border-radius: 5px;
 	background-color: #308014;
-	position: absolute
+	position: fixed
 }
 #raceDisplayHumanM{
 	height: 70%;
 	width: 45%;
+	opacity: 90%;
 	background-color: white;
     padding: 0.5% 1% 0.5% 1%;
     border: 1px solid #522900;
@@ -42,11 +45,21 @@ body  {
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
     border-top-right-radius: 6px;
-	
+}
+#raceDisplayHumanM li{
+	display: initial;
+	border: none;
+	list-style: disc
 }
 #raceDisplayHumanM img {
+	opacity:100%;
 	max-height: 50%;
 	max-width: 70%;
+	border: 1px solid #522900;
+	border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 .team
 {
