@@ -75,14 +75,42 @@
 			</div>
 	   </div>
 	  </div>
-<div id='raceDisplayHumanM' class='raceDisplay'>
+<div id='raceDisplayContainer'>
+<div id='raceDisplayHumanM' class='raceDisplay'><!--Midlander display-->
 	<img src="http://i.imgur.com/GxeikaX.jpg">
-	<p>Midlanders<br>HP:6/MP:6<br>Racial Boons:<p>
-	<ul>
-	<li>2 Professions to Start</li><br>
-	<li>Favored Group</li>
-	</ul>
-	  
+	<p>Midlanders<br>HP:6/MP:6<br>Racial Boons:<br>
+	2 Professions to Start<br>
+	Favored Group
+	<button type="button" class="buttonSelect" id="selectHumanMidlander">Select</button>
+	<button type="button" class="returnButtonRace returnButton">Return</button>
+	</p>	  
+	<script>
+document.writeln("Hello World!");
+document.writeln("Have a nice day!");
+</script>
+</div>
+<div id='raceDisplayHumanN' class='raceDisplay' style="display:none"><!--Northlander display-->
+	<img src="http://i.imgur.com/GxeikaX.jpg">
+	<p>Northlanders<br>HP:10/MP:4<br>Racial Boons:<br>
+	Novice skill in Huntsman or Mystic<br>
+	Choice between:<br>Path of the Warrior<br>
+	Path of the Fate Wielder<br>
+	Path of the Jarl</p>
+	<button type="button" class="buttonSelect" id="selectHumanMidlander">Select</button>
+	<button type="button" class="returnButtonRace returnButton">Return</button>
+	</p>	  
+</div>
+<div id='raceDisplayHumanW' class='raceDisplay' style="display:none"><!--Wastelander display-->
+	<img src="http://i.imgur.com/GxeikaX.jpg">
+	<p>Wastelanders<br>HP:4/MP:8<br>Racial Boons:<br>
+	Novice skill in Merchant or Rogue<br>
+	Choice between:<br>Slow<br>
+	Mend Limb<br>
+	Heart Scarab</p>
+	<button type="button" class="buttonSelect" id="selectHumanMidlander">Select</button>
+	<button type="button" class="returnButtonRace returnButton">Return</button>
+	</p>	  
+</div>
 </div>
 </div>
 <div id='sideBar'>
@@ -91,8 +119,12 @@
 </div>
 <div id='characterSheet'><!--Heart of the project. It will show the results from the selections the user makes.-->
 	<div id='options'><p>Options</p></div>
-	<div id='sheetName'></div>
-	<div id='sheetCharacterName'></div>
+	<div id='sheetName'>
+		<form>Player name: <input type="text" name="playerName"></form>
+	</div>
+	<div id='sheetCharacterName'>
+		<form>Character name: <input type="text" name="characterName"></form>
+	</div>
 	<div id='sheetRace'><p>Race:</p></div>
 	<div id='sheetSkillSet'></div>
 	<div id='sheetProfession'></div><p>Hi</p>
