@@ -11,27 +11,22 @@ body  {
     font-family: garamond;
 }
 #sidebar{
-	height: 320px;
-	width: 120px;
-	border: .2 em solid black;
-	border-radius: 5px;
+	height: 100%;
+	width: 100%;
 	background-color: #303014;
-	position: fixed;
-	float: right;
-	top:30px;
-    right:50px;
-}
-#options{
-	position: fixed;
-	float:top
+	position: relative;
+	display: inline-block;
+	z-index: 10
 }
 #characterSheet {
-	height: 300px;
-	width: 100px;
 	border: .2 em solid black;
 	border-radius: 5px;
 	background-color: #308014;
-	position: fixed
+	position: fixed;
+	display: block;
+	top: 3em;
+    right: 0;
+	
 }
 #raceDisplayHumanM{
 	height: 70%;
@@ -109,9 +104,16 @@ ul li.selected {
 ul li:hover {
       opacity: 1;
       }
-
+div.main{
+	display: inline-block;
+	width:70%;
+}
 div.page {
     text-align: center;
+	position: relative;
+	max-width:90%;
+	min-width:60%;
+	z-index: 0;
 }
 /*  Making sure my li's look how I want them, alligned properly and without bullets */
 div.page li {
