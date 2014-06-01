@@ -17,19 +17,20 @@ $(document).ready(function() {
     
     });
     $raceContentTab = $(".raceContentTab li");//this manages the pages for individual players, and is highly similar to the above code.
-    
+
     $raceContentTab.click(function() {
         if($(this)){
             $raceContentTab.removeClass("selectedRace");
         $(this).addClass("selectedRace");}
         
-        selectionIdTeam = $(this).attr('id');
+        selectedRace = $(this).attr('id');
         
-        $pagesTeam = $(".pageTeam#"+selectionIdTeam);
+        $raceDisplay = $(".raceDisplay#"+selectedRace);
     $(".content").fadeOut("fast", function(){
-        $(".pageTeam").css("display", "none");
-        $(".pageTeam#"+selectionIdTeam).css("display", "block");
+        $(".raceDisplay").css("display", "none");
+        $(".raceDisplay#"+selectedRace).css("display", "block");
         $(".content").fadeIn("slow");
     });
     });
+	
 });

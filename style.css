@@ -33,26 +33,25 @@ body  {
     border-top-right-radius: 6px;
 	
 }
-#raceDisplayHumanM{
+.raceStyle{
 	height: 70%;
 	width: 45%;
-	opacity: 80%;
-	background-color: white;
+	background-color: #FFF8F1;
     padding: 0.5% 1% 0.5% 1%;
     border: 1px solid #522900;
-    display: inline-block;
+	vertical-align: top;
+	display:initial;
     border-top-left-radius: 6px; 
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
     border-top-right-radius: 6px;
 }
-#raceDisplayHumanM li{
+.raceStyle li{
 	display: initial;
 	border: none;
 	list-style: disc
 }
-#raceDisplayHumanM img {
-	opacity:100%;
+.raceStyle img {
 	max-height: 50%;
 	max-width: 70%;
 	border: 1px solid #522900;
@@ -120,7 +119,7 @@ div.page {
 	min-width:60%;
 	z-index: 0;
 }
-/*  Making sure my li's look how I want them, alligned properly and without bullets */
+/*  Making sure my li's look how I want them, aligned properly and without bullets */
 div.page li {
     text-align: left;
     list-style-type: none;

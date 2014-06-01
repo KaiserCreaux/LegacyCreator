@@ -27,7 +27,7 @@
 		<h5>The Humans</h5>
 		<p>Humans are known to others primarily by their homelands.<br> The three great human cultures are the <a href="http://legacylarp.com/midlanders.php" target="_blank">Midlanders</a>, <br>the <a href="http://legacylarp.com/wastelanders.php" target="_blank">Wastelanders</a> and the <a href="http://legacylarp.com/northlanders.php" target="_blank">Northlanders</a>.</p>
 			<ul class="humanTypeTab"><!--The tabs to switch between human subtypes-->
-				<li id="midlanderTab" class=><div>Midlander</div></li>
+				<li id="midlanderTab"><div>Midlander</div></li>
 				<li id="northlanderTab"><div>Northlander</div></li>
 				<li id="wastelanderTab"><div>Wastelander</div></li>
 			</ul>
@@ -76,7 +76,18 @@
 	   </div>
 	  </div>
 <div id='raceDisplayContainer'>
-<div id='raceDisplayHumanM' class='raceDisplay'><!--Midlander display-->
+<div id='northlanderTab' class='raceDisplay raceStyle' style="display:none"><!--Northlander display-->
+	<img src="http://i.imgur.com/C0FYqod.jpg">
+	<p>Northlanders<br>HP:10/MP:4<br>Racial Boons:<br>
+	Novice skill in Huntsman or Mystic<br>
+	Choice between:<br>Path of the Warrior<br>
+	Path of the Fate Wielder<br>
+	Path of the Jarl
+	<button type="button" class="buttonSelect" id="selectHumanNorthlander">Select</button>
+	<button type="button" class="returnButtonRace returnButton">Return</button>
+	</p>	  
+</div>
+<div id='midlanderTab' class='raceDisplay raceStyle' style="display:block"><!--Midlander display-->
 	<img src="http://i.imgur.com/GxeikaX.jpg">
 	<p>Midlanders<br>HP:6/MP:6<br>Racial Boons:<br>
 	2 Professions to Start<br>
@@ -84,30 +95,15 @@
 	<button type="button" class="buttonSelect" id="selectHumanMidlander">Select</button>
 	<button type="button" class="returnButtonRace returnButton">Return</button>
 	</p>	  
-	<script>
-document.writeln("Hello World!");
-document.writeln("Have a nice day!");
-</script>
 </div>
-<div id='raceDisplayHumanN' class='raceDisplay' style="display:none"><!--Northlander display-->
-	<img src="http://i.imgur.com/GxeikaX.jpg">
-	<p>Northlanders<br>HP:10/MP:4<br>Racial Boons:<br>
-	Novice skill in Huntsman or Mystic<br>
-	Choice between:<br>Path of the Warrior<br>
-	Path of the Fate Wielder<br>
-	Path of the Jarl</p>
-	<button type="button" class="buttonSelect" id="selectHumanMidlander">Select</button>
-	<button type="button" class="returnButtonRace returnButton">Return</button>
-	</p>	  
-</div>
-<div id='raceDisplayHumanW' class='raceDisplay' style="display:none"><!--Wastelander display-->
-	<img src="http://i.imgur.com/GxeikaX.jpg">
+<div id='wastelanderTab' class='raceDisplay raceStyle' style="display:none"><!--Wastelander display-->
+	<img src="http://i.imgur.com/KKH0r9u.jpg">
 	<p>Wastelanders<br>HP:4/MP:8<br>Racial Boons:<br>
 	Novice skill in Merchant or Rogue<br>
 	Choice between:<br>Slow<br>
 	Mend Limb<br>
-	Heart Scarab</p>
-	<button type="button" class="buttonSelect" id="selectHumanMidlander">Select</button>
+	Heart Scarab
+	<button type="button" class="buttonSelect" id="selectHumanWastelander">Select</button>
 	<button type="button" class="returnButtonRace returnButton">Return</button>
 	</p>	  
 </div>
