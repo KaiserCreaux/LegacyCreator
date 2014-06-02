@@ -32,12 +32,32 @@ $(document).ready(function() {
         $(".content").fadeIn("slow");
     });
     });
+	//What follows is the array of data for the various races, stored in the format race, hp, mp, professions, abilities.
+	//Midlanders 0, Northlanders 1, Wastelanders 2
+	var $raceData = [['Midlander',6,6,["Any Additional"],["Favored Group"]],['Northlander',10,4,["Shaman", "Huntsman"],["Path of the Warrior","Path of the Fate Wielder","Path of the Jarl"]],['Wastelander',4,8,["Rogue","Merchant"],["Slow","Mend Limb",	"Heart Scarab"]]];
+	
 	//The return button should bring the initial race-type select card up. I'll make this work later.
-	$returnButtonRace(function(){	
-		$(".raceDisplay").hide();}
-	);
-	//THIS IS MY CHARACTER SHEET BUILDING GUTS ZONE
-
+	//$("returnButtonRace").click(function(){	
+		//$(".raceDisplay").css("display", "none");}
+	$("#selectHumanNorthlander").click(function(){
+		window.alert("This Function Has Been Called!");
+		var raceTotal=document.getElementById("#raceTotal");
+		var hitPointsTotal=document.getElementById("#hitPointsTotal");
+		var magicPointsTotal=document.getElementById("#magicPointsTotal");
+		var professionsTotal=document.getElementById("#professionsTotal");
+		var abilitiesTotal=document.getElementById("#abilitiesTotal");
+		raceTotal=$raceData[1][0];			
+		hitPointsTotal.textContent=$raceData[1][1];			
+		magicPointsTotal.textContent=$raceData[1][2];
+		professionsTotal.textContent=$raceData[1][3];
+		abilitiesTotal.textContent=$raceData[1][4];
+		});
+	
+	/*THIS IS MY CHARACTER SHEET BUILDING GUTS ZONE. Lots of ideas I may implement here.
+	
+	
+	//function AddRace(
+	
 	var hitPoints = function(raceSelected){
      if (raceSelected === "midlander"){
         return 6;}
@@ -57,5 +77,5 @@ $(document).ready(function() {
         return 8;}
      else {
         return 1;}
-};
+};*/
 });
