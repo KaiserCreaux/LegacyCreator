@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
     
     });
-    $raceContentTab = $(".raceContentTab li");//this manages the pages for individual players, and is highly similar to the above code.
+    $raceContentTab = $(".raceContentTab li");//this manages the pages for individual races, and is highly similar to the above code.
 
     $raceContentTab.click(function() {
         if($(this)){
@@ -32,5 +32,30 @@ $(document).ready(function() {
         $(".content").fadeIn("slow");
     });
     });
-	
+	//The return button should bring the initial race-type select card up. I'll make this work later.
+	$returnButtonRace(function(){	
+		$(".raceDisplay").hide();}
+	);
+	//THIS IS MY CHARACTER SHEET BUILDING GUTS ZONE
+
+	var hitPoints = function(raceSelected){
+     if (raceSelected === "midlander"){
+        return 6;}
+     else if (raceSelected === "northlander"){
+        return 10;}
+     else if (raceSelected === "wastelander"){
+        return 4;}
+     else {
+        return 1;}
+};
+	var manaPoints = function(raceSelected){
+     if (raceSelected === "midlander"){
+        return 6;}
+     else if (raceSelected === "northlander"){
+        return 4;}
+     else if (raceSelected === "wastelander"){
+        return 8;}
+     else {
+        return 1;}
+};
 });
