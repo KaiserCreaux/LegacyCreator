@@ -50,7 +50,7 @@ $(document).ready(function() {
 	//The return button should bring the initial race-type select card up. I'll make this work later.
 	//$("returnButtonRace").click(function(){	
 		//$(".raceDisplay").css("display", "none");}
-	$("#selectHumanMidlander").click(function(){
+	$("#selectMidlander").click(function(){
 		var $raceTotal=document.getElementById("raceTotal");
 		var $hitPointsTotal=document.getElementById("hitPointsTotal");
 		var $magicPointsTotal=document.getElementById("magicPointsTotal");
@@ -62,7 +62,7 @@ $(document).ready(function() {
 		$professionsTotal.textContent=$raceData[0][3];
 		$abilitiesTotal.textContent=$raceData[0][4];
 		});
-	$("#selectHumanNorthlander").click(function(){
+	$("#selectNorthlander").click(function(){
 		var $raceTotal=document.getElementById("raceTotal");
 		var $hitPointsTotal=document.getElementById("hitPointsTotal");
 		var $magicPointsTotal=document.getElementById("magicPointsTotal");
@@ -74,7 +74,7 @@ $(document).ready(function() {
 		$professionsTotal.textContent=$raceData[1][3];
 		$abilitiesTotal.textContent=$raceData[1][4];
 		});
-	$("#selectHumanWastelander").click(function(){
+	$("#selectWastelander").click(function(){
 		var $raceTotal=document.getElementById("raceTotal");
 		var $hitPointsTotal=document.getElementById("hitPointsTotal");
 		var $magicPointsTotal=document.getElementById("magicPointsTotal");
@@ -86,7 +86,139 @@ $(document).ready(function() {
 		$professionsTotal.textContent=$raceData[2][3];
 		$abilitiesTotal.textContent=$raceData[2][4];
 		});
-	
+	$("#selectGreyElf").click(function(){
+		var $raceTotal=document.getElementById("raceTotal");
+		var $hitPointsTotal=document.getElementById("hitPointsTotal");
+		var $magicPointsTotal=document.getElementById("magicPointsTotal");
+		var $professionsTotal=document.getElementById("professionsTotal");
+		var $abilitiesTotal=document.getElementById("abilitiesTotal");
+		$raceTotal.textContent=$raceData[3][0];			
+		$hitPointsTotal.textContent=$raceData[3][1];			
+		$magicPointsTotal.textContent=$raceData[3][2];
+		$professionsTotal.textContent=$raceData[3][3];
+		$abilitiesTotal.textContent=$raceData[3][4];
+		});
+	$("#selectWildElf").click(function(){
+		var $raceTotal=document.getElementById("raceTotal");
+		var $hitPointsTotal=document.getElementById("hitPointsTotal");
+		var $magicPointsTotal=document.getElementById("magicPointsTotal");
+		var $professionsTotal=document.getElementById("professionsTotal");
+		var $abilitiesTotal=document.getElementById("abilitiesTotal");
+		$raceTotal.textContent=$raceData[4][0];			
+		$hitPointsTotal.textContent=$raceData[4][1];			
+		$magicPointsTotal.textContent=$raceData[4][2];
+		$professionsTotal.textContent=$raceData[4][3];
+		$abilitiesTotal.textContent=$raceData[4][4];
+		});
+	$("#selectDarkElf").click(function(){
+		var $raceTotal=document.getElementById("raceTotal");
+		var $hitPointsTotal=document.getElementById("hitPointsTotal");
+		var $magicPointsTotal=document.getElementById("magicPointsTotal");
+		var $professionsTotal=document.getElementById("professionsTotal");
+		var $abilitiesTotal=document.getElementById("abilitiesTotal");
+		$raceTotal.textContent=$raceData[5][0];			
+		$hitPointsTotal.textContent=$raceData[5][1];			
+		$magicPointsTotal.textContent=$raceData[5][2];
+		$professionsTotal.textContent=$raceData[5][3];
+		$abilitiesTotal.textContent=$raceData[5][4];
+		});
+	$("#selectDeepBeard").click(function(){
+		var $raceTotal=document.getElementById("raceTotal");
+		var $hitPointsTotal=document.getElementById("hitPointsTotal");
+		var $magicPointsTotal=document.getElementById("magicPointsTotal");
+		var $professionsTotal=document.getElementById("professionsTotal");
+		var $abilitiesTotal=document.getElementById("abilitiesTotal");
+		$raceTotal.textContent=$raceData[6][0];			
+		$hitPointsTotal.textContent=$raceData[6][1];			
+		$magicPointsTotal.textContent=$raceData[6][2];
+		$professionsTotal.textContent=$raceData[6][3];
+		$abilitiesTotal.textContent=$raceData[6][4];
+		});
+	$("#selectHighBeard").click(function(){
+		var $raceTotal=document.getElementById("raceTotal");
+		var $hitPointsTotal=document.getElementById("hitPointsTotal");
+		var $magicPointsTotal=document.getElementById("magicPointsTotal");
+		var $professionsTotal=document.getElementById("professionsTotal");
+		var $abilitiesTotal=document.getElementById("abilitiesTotal");
+		$raceTotal.textContent=$raceData[7][0];			
+		$hitPointsTotal.textContent=$raceData[7][1];			
+		$magicPointsTotal.textContent=$raceData[7][2];
+		$professionsTotal.textContent=$raceData[7][3];
+		$abilitiesTotal.textContent=$raceData[7][4];
+		});
+	$("#selectOrc").click(function(){
+		var $raceTotal=document.getElementById("raceTotal");
+		var $hitPointsTotal=document.getElementById("hitPointsTotal");
+		var $magicPointsTotal=document.getElementById("magicPointsTotal");
+		var $professionsTotal=document.getElementById("professionsTotal");
+		var $abilitiesTotal=document.getElementById("abilitiesTotal");
+		$raceTotal.textContent=$raceData[8][0];			
+		$hitPointsTotal.textContent=$raceData[8][1];			
+		$magicPointsTotal.textContent=$raceData[8][2];
+		$professionsTotal.textContent=$raceData[8][3];
+		$abilitiesTotal.textContent=$raceData[8][4];
+		});
+	$("#selectGoblin").click(function(){
+		var $raceTotal=document.getElementById("raceTotal");
+		var $hitPointsTotal=document.getElementById("hitPointsTotal");
+		var $magicPointsTotal=document.getElementById("magicPointsTotal");
+		var $professionsTotal=document.getElementById("professionsTotal");
+		var $abilitiesTotal=document.getElementById("abilitiesTotal");
+		$raceTotal.textContent=$raceData[9][0];			
+		$hitPointsTotal.textContent=$raceData[9][1];			
+		$magicPointsTotal.textContent=$raceData[9][2];
+		$professionsTotal.textContent=$raceData[9][3];
+		$abilitiesTotal.textContent=$raceData[9][4];
+		});
+	$("#selectAirWyrd").click(function(){
+		var $raceTotal=document.getElementById("raceTotal");
+		var $hitPointsTotal=document.getElementById("hitPointsTotal");
+		var $magicPointsTotal=document.getElementById("magicPointsTotal");
+		var $professionsTotal=document.getElementById("professionsTotal");
+		var $abilitiesTotal=document.getElementById("abilitiesTotal");
+		$raceTotal.textContent=$raceData[10][0];			
+		$hitPointsTotal.textContent=$raceData[10][1];			
+		$magicPointsTotal.textContent=$raceData[10][2];
+		$professionsTotal.textContent=$raceData[10][3];
+		$abilitiesTotal.textContent=$raceData[10][4];
+		});
+	$("#selectEarthWyrd").click(function(){
+		var $raceTotal=document.getElementById("raceTotal");
+		var $hitPointsTotal=document.getElementById("hitPointsTotal");
+		var $magicPointsTotal=document.getElementById("magicPointsTotal");
+		var $professionsTotal=document.getElementById("professionsTotal");
+		var $abilitiesTotal=document.getElementById("abilitiesTotal");
+		$raceTotal.textContent=$raceData[11][0];			
+		$hitPointsTotal.textContent=$raceData[11][1];			
+		$magicPointsTotal.textContent=$raceData[11][2];
+		$professionsTotal.textContent=$raceData[11][3];
+		$abilitiesTotal.textContent=$raceData[11][4];
+		});
+	$("#selectFireWyrd").click(function(){
+		var $raceTotal=document.getElementById("raceTotal");
+		var $hitPointsTotal=document.getElementById("hitPointsTotal");
+		var $magicPointsTotal=document.getElementById("magicPointsTotal");
+		var $professionsTotal=document.getElementById("professionsTotal");
+		var $abilitiesTotal=document.getElementById("abilitiesTotal");
+		$raceTotal.textContent=$raceData[12][0];			
+		$hitPointsTotal.textContent=$raceData[12][1];			
+		$magicPointsTotal.textContent=$raceData[12][2];
+		$professionsTotal.textContent=$raceData[12][3];
+		$abilitiesTotal.textContent=$raceData[12][4];
+		});
+	$("#selectWaterWyrd").click(function(){
+		var $raceTotal=document.getElementById("raceTotal");
+		var $hitPointsTotal=document.getElementById("hitPointsTotal");
+		var $magicPointsTotal=document.getElementById("magicPointsTotal");
+		var $professionsTotal=document.getElementById("professionsTotal");
+		var $abilitiesTotal=document.getElementById("abilitiesTotal");
+		$raceTotal.textContent=$raceData[13][0];			
+		$hitPointsTotal.textContent=$raceData[13][1];			
+		$magicPointsTotal.textContent=$raceData[13][2];
+		$professionsTotal.textContent=$raceData[13][3];
+		$abilitiesTotal.textContent=$raceData[13][4];
+		});
+		
 	/*THIS IS MY CHARACTER SHEET BUILDING GUTS ZONE. Lots of ideas I may implement here.
 	
 	

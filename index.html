@@ -36,6 +36,9 @@
 	  </div>
 	  <div class="raceContentTab" id="elfTab"><div class="seg" id="elfTab" style="display:none;">       
 		<div class="content" style="display:block;">
+		<h5>The Elves</h5>
+		<p>An ancient race, elves have lived in most settlements across the world of Sapience. The <a href="http://legacylarp.com/greyelves.php">Grey Elves</a> are noble, wise and withdrawn. The <a href="http://legacylarp.com/darkelves.php">Dark Elves</a> are hierarchical, cunning and always in pursuit of power. Finally, the <a href="http://legacylarp.com/wildelves.php">Wild Elves</a>, stern and resolute, have a love and respect for nature only matched by their aloofness towards those who forget Nature's strength.
+
 			<ul class="elfTypeTab"><!--The main tabs to switch between elf subtypes-->
 				<li id="darkElfTab"><div>Dark Elf</div></li>
 				<li id="greyElfTab"><div>Grey Elf</div></li>
@@ -46,6 +49,8 @@
 	  </div>
 	  <div class="raceContentTab" id="dwarfTab"><div class="seg" id="dwarfTab" style="display:none;">     
 		<div class="content" style="display:block;">
+		<h5>The Dwarves</h5>
+		<p>An ancient people claiming to have been created by Ozar the World Builder, the pious and formal <a href="http://legacylarp.com/deepbeards.php">Deep Beards</a> are a contrast to the impetuous and clan-focused <a href="http://legacylarp.com/highbeards.php">High Beards</a>.
 			<ul class="dwarfTypeTab"><!--The main tabs to switch between dwarf subtypes-->
 				<li id="deepBeardTab"><div>Deep Beard</div></li>
 				<li id="highBeardTab"><div>High Beard</div></li>
@@ -55,6 +60,8 @@
 	  </div>
 	  <div class="raceContentTab" id="dahnTab"><div class="seg" id="dahnTab" style="display:none;">        
 		<div class="content" style="display:block;">
+		<h5>The Dahn</h5>
+		<p>Those Orcs and Goblins who eschew the savage ways of the majority of their type are collectively known as the <a href="http://legacylarp.com/dahn.php">Dahn</a>.
 			<ul class="dahnTypeTab"><!--The main tabs to switch between dahn subtypes-->
 				<li id="goblinTab"><div>Goblin</div></li>
 				<li id="orcTab"><div>Orc</div></li>
@@ -64,8 +71,8 @@
 	  </div>
 	  <div class="raceContentTab" id="wyrdTab"><div class="seg" id="wyrdTab" style="display:none;">       
 		<div class="content" style="display:block;">
-		<h5>The Wyrd <br>http://legacylarp.com/wyrd.php</h5>
-		
+		<h5>The Wyrd</h5>
+		<p>Of all the mortal races of Sapience, there are none more shrouded in mystery than the <a href="http://legacylarp.com/wyrd.php">Wyrd</a>. They themselves believe to be the living will of their respective elements.
 			<ul class="wyrdTypeTab"><!--The tabs to switch between wyrd subtypes-->
 				<li id="airWyrdTab"><div>Air Wyrd</div></li>
 				<li id="earthWyrdTab"><div>Earth Wyrd</div></li>
@@ -81,7 +88,7 @@
 	<p>Northlanders<br>HP:10/MP:4<br>Racial Boons:<br>
 	Novice skill in Huntsman or Mystic<br>
 	Choice between:<br>Path of the Warrior<br>Path of the Fate Wielder<br>Path of the Jarl
-	<button type="button" class="buttonSelect" id="selectHumanNorthlander">Select</button>
+	<button type="button" class="buttonSelect" id="selectNorthlander">Select</button>
 	<button type="button" class="returnButtonRace returnButton">Return</button>
 	</p>	  
 </div>
@@ -90,7 +97,7 @@
 	<p>Midlanders<br>HP:6/MP:6<br>Racial Boons:<br>
 	2 Professions to Start<br>
 	Favored Group
-	<button type="button" class="buttonSelect" id="selectHumanMidlander">Select</button>
+	<button type="button" class="buttonSelect" id="selectMidlander">Select</button>
 	<button type="button" class="returnButtonRace returnButton">Return</button>
 	</p>	  
 </div>
@@ -99,9 +106,117 @@
 	<p>Wastelanders<br>HP:4/MP:8<br>Racial Boons:<br>
 	Novice skill in Merchant or Rogue<br>
 	Choice between:<br>Slow<br>Mend Limb<br>Heart Scarab
-	<button type="button" class="buttonSelect" id="selectHumanWastelander" >Select</button>
+	<button type="button" class="buttonSelect" id="selectWastelander" >Select</button>
 	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
 	</p>	  
+</div>
+<div id='greyElfTab' class='raceDisplay raceStyle' style="display:none"><!--Grey Elves-->
+	<img src="http://i.imgur.com/6aGfjRE.jpg">
+	<p>Grey Elves<br>HP:6/MP:10<br>Racial Boons:<br>
+	Novice skill in Mystic or Linguist<br>
+	Choice between:<br>Erudition<br>Comprehend<br>Refuge
+	<button type="button" class="buttonSelect" id="selectGreyElf" >Select</button>
+	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+	</p>	  
+</div>
+<div id='wildElfTab' class='raceDisplay raceStyle' style="display:none"><!--Wild Elves display-->
+	<img src="http://i.imgur.com/GE4STlj.jpg">
+	<p>Wild Elves<br>HP:6/MP:8<br>Racial Boons:<br>
+	Novice skill in Huntsman or Medicine<br>
+	Choice between:<br>Writ of the Maple<br>Writ of the Cedar<br>Writ of the Oak
+	<button type="button" class="buttonSelect" id="selectWildElf" >Select</button>
+	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+	</p>	  
+</div>
+<div id='darkElfTab' class='raceDisplay raceStyle' style="display:none"><!--Dark Elf display-->
+	<img src="http://i.imgur.com/9JX1yeO.jpg">
+	<p>Dark Elves<br>HP:4/MP:12<br>Racial Boons:<br>
+	Novice skill in Diplomat or Poison<br>
+	Choice between:<br>sting<br>Shadow Mask<br>Combat Sacrifice
+	<button type="button" class="buttonSelect" id="selectDarkElf" >Select</button>
+	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+	</p>	  
+</div>
+<div id='deepBeardTab' class='raceDisplay raceStyle' style="display:none"><!--Deep Beard display-->
+	<img src="http://i.imgur.com/5ahCb4Q.jpg">
+	<p>Deep Beards<br>HP:6/MP:8<br>Racial Boons:<br>
+	Novice skill in History or Jeweller<br>
+	Heirloom Item
+	<button type="button" class="buttonSelect" id="selectDeepBeard" >Select</button>
+	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+	</p>	  
+</div>
+<div id='highBeardTab' class='raceDisplay raceStyle' style="display:none"><!--high Beard display-->
+	<img src="http://i.imgur.com/FCnzWiW.jpg">
+	<p>High Beards<br>HP:6/MP:6<br>Racial Boons:<br>
+	Novice skill in Bard or Brewer<br>
+	Choice between:<br>
+	Geas of Animal<br>
+	Geas of Nourishment<br>
+	Geas of Guest<br>
+	<button type="button" class="buttonSelect" id="selectHighBeard" >Select</button>
+	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+	</p>	  
+</div>
+<div id='orcTab' class='raceDisplay raceStyle' style="display:none"><!--Orc display-->
+	<img src="http://i.imgur.com/dF4gEPT.jpg">
+	<p>Orcs<br>HP:8/MP:8<br>Racial Boons:<br>
+	Novice skill in Jeweller or Battle Smith<br>
+	Choice between:<br>
+	Gift of Drogba<br>
+	Gift of Gerkal<br>
+	Bane of Duat<br>
+	<button type="button" class="buttonSelect" id="selectOrc" >Select</button>
+	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+	</p>	  
+</div>
+<div id='goblinTab' class='raceDisplay raceStyle' style="display:none"><!--Goblin display-->
+	<img src="http://i.imgur.com/gdSSFVG.jpg">
+	<p>Goblins<br>HP:4/MP:12<br>Racial Boons:<br>
+	Novice skill in Jeweller or Battle Smith<br>
+	Choice between:<br>
+	Gift of Drogba<br>
+	Gift of Gerkal<br>
+	Bane of Duat<br>
+	<button type="button" class="buttonSelect" id="selectGoblin" >Select</button>
+	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+	</p>	  
+</div>
+<div id='airWyrdTab' class='raceDisplay raceStyle' style="display:none"><!--Air Wyrd display-->
+	<img src="http://i.imgur.com/GrLJIes.jpg">
+	<p>Air Wyrds<br>HP:4/MP:10<br>Racial Boons:<br>
+	Novice skill in History or Linguistics<br>
+	Dart of Lightning
+	<button type="button" class="buttonSelect" id="selectAirWyrd" >Select</button>
+	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+	</p>	  
+</div>
+<div id='earthWyrdTab' class='raceDisplay raceStyle' style="display:none"><!--Earth Wyrd display-->
+	<img src="http://i.imgur.com/9MLJ4Xt.jpg">
+	<p>Earth Wyrds<br>HP:4/MP:10<br>Racial Boons:<br>
+	Novice skill in Medicine or Poison<br>
+	Dart of Crystal
+	<button type="button" class="buttonSelect" id="selectEarthWyrd" >Select</button>
+	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+	</p>	    
+</div>
+<div id='fireWyrdTab' class='raceDisplay raceStyle' style="display:none"><!--Fire Wyrd display-->
+	<img src="http://i.imgur.com/SNj7Zvd.jpg">
+	<p>Fire Wyrds<br>HP:4/MP:10<br>Racial Boons:<br>
+	Novice skill in Battle Smith or Artificer<br>
+	Dart of Fire
+	<button type="button" class="buttonSelect" id="selectFireWyrd" >Select</button>
+	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+	</p>	    
+</div>
+<div id='waterWyrdTab' class='raceDisplay raceStyle' style="display:none"><!--Water Wyrd display-->
+	<img src="http://i.imgur.com/3EgM2Wl.jpg">
+	<p>Water Wyrds<br>HP:4/MP:10<br>Racial Boons:<br>
+	Novice skill in Merchant or Bard<br>
+	Dart of Ice
+	<button type="button" class="buttonSelect" id="selectWaterWyrd" >Select</button>
+	<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+	</p>	    
 </div>
 </div>
 </div>
